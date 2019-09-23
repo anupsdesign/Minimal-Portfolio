@@ -1,0 +1,1251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <link rel="stylesheet" href="style/swiper.css">  
+      <link rel="stylesheet" href="style/swiper.min.css">  
+      
+      <script src="https://kit.fontawesome.com/0bbf47f20a.js"></script>
+    <title>Anup&#39;s Design</title>
+  </head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Fugaz+One&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+
+
+
+    html{
+
+        color: #333;
+    }
+    body:not(){
+        overflow-x: hidden;
+    }
+    ::-moz-scrollbar {
+              width: 0px;  /* Remove scrollbar space */
+              background: transparent;  /* Optional: just make scrollbar invisible */
+          }
+        ::-webkit-scrollbar {
+              width: 0px;  /* Remove scrollbar space */
+              background: transparent;  /* Optional: just make scrollbar invisible */
+          }
+    a{
+        color: inherit;
+    }
+    
+    section{
+        height: 100vh;
+        padding: 100px;
+        overflow: scroll;
+    }
+    .logo{
+        background-color: transparent;
+        -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.2s both;
+        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.2s both;
+    }
+    @-webkit-keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    .inside-wrap{
+        background-color: #fff;
+    }
+    .scroll{
+        position: absolute;
+        bottom:0;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+        z-index: 1;
+        -webkit-animation: slide-in-bottom 0.9s alternate 1s both;
+        animation: slide-in-bottom 0.9s alternate 1s both;
+    }
+    .scroll i:hover{
+        -webkit-animation: jello-horizontal 2s alternate both;
+        animation: jello-horizontal 2s alternate both;
+    }
+    @-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+    .scroll i{
+        font-size: 3em;
+        color: #000;
+    }
+    .center-text{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+    .top-margin{
+        margin-top: 50px;
+    }
+    header{
+        background-color: #fcfcfc;
+        width: 100%;        
+        margin: auto;
+        line-height: 80px;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease-out;
+            -moz-transition: all 0.5s ease-out;
+            -webkit-transition: all 0.5s ease-out;
+            -o-transition: all 0.5s ease-out;
+    }
+    .dark-mode header{background-color: #111;}
+    h1{
+        letter-spacing: .05em;
+        font-weight: bolder;
+        font-family: 'Lexend Deca', sans-serif;
+    }
+    h1 span.color{
+        color: #BE935A;
+    }
+    h1 span.size{
+        font-size: .7em;
+        color: #555;
+    }
+    p{
+        color: #666;
+        line-height: 2em;
+/*        font-family: 'Nunito', sans-serif;*/
+        font-family: 'Questrial', sans-serif;
+        font-size: 1.05em;
+        font-weight: lighter;
+        letter-spacing: .05em;
+    }
+    .left{
+        padding: 20px;
+    }
+    #one .left{
+        -webkit-animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) .2s both;
+        animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) .2s both;
+    }
+    @-webkit-keyframes fade-in-top {
+      0% {
+        -webkit-transform: translateY(-50px);
+                transform: translateY(-50px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    @keyframes fade-in-top {
+      0% {
+        -webkit-transform: translateY(-50px);
+                transform: translateY(-50px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    #one .right{
+        -webkit-animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) .2s both;
+        animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) .2s both;
+    }
+    @-webkit-keyframes fade-in-bottom {
+      0% {
+        -webkit-transform: translateY(50px);
+                transform: translateY(50px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    @keyframes fade-in-bottom {
+      0% {
+        -webkit-transform: translateY(50px);
+                transform: translateY(50px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .right .center-text{
+        background-image: url(images/portrait.jpeg);
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .left{z-index: 1;}
+    .round-img{
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        position: absolute;
+        top: -5%;
+        right: 0;
+        z-index: -1;
+        background-image: url(images/portrait.jpeg);
+        background-size: cover;
+        background-position: center;
+        transition: .3s;
+        visibility: hidden;
+        opacity: 0;
+    }
+    #two p,#three p,#four p,#five p{
+        margin: 10px;
+    }
+    @media screen and (min-height: 800px) {
+        .center-content{
+            width: 70%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+    }
+         #two,#three{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    }   
+    }
+    @media screen and (min-height: 600px) {
+         #two,#three,#four,#five{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    }   
+    }
+    @media screen and (max-width: 1000px) {
+        section{
+            padding: 70px;
+            height: auto;
+        }
+        .right .center-text{
+            display: none;
+        }   
+        .round-img{
+            transition: .3s;
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    
+/* Toggle Menu */
+    .toggleWrapper {
+        position: fixed;
+        bottom:20px;
+        right:0px;
+        padding: 0 60px;
+        overflow: hidden;
+        -webkit-animation: slide-in-bottom 0.9s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1s both;
+        animation: slide-in-bottom 0.9s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1s both;
+        z-index: 999;
+    }
+    .toggleWrapper input {
+      position: absolute;
+      left: -99em;
+    }
+    .toggle {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      width: 60px;
+      height: 30px;
+      background-color: #83d8ff;
+      border-radius: 84px;
+      transition: background-color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+    .toggle:before {
+      content: 'Light';
+      position: absolute;
+      left: -50px;
+      top: 0px;
+      font-size: 18px;
+      color: #ffc437;
+      display: none;
+    }
+    .toggle:after {
+      content: 'Dark';
+      position: absolute;
+      right: -48px;
+      top: 0;
+      font-size: 18px;
+      color: #749ed7;
+      display: none;
+    }
+    .toggle__handler {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      top: 3px;
+      left: 4px;
+      width: 25px;
+      height: 25px;
+      background-color: #ffcb3f;
+      border-radius: 50px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+      transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      transform: rotate(-45deg);
+    }
+    .toggle__handler .crater {
+      position: absolute;
+      background-color: #e8cda5;
+      opacity: 0;
+      transition: opacity 200ms ease-in-out;
+      border-radius: 100%;
+    }
+    .toggle__handler .crater--1 {
+      top: 8px;
+      left: 13px;
+      width: 4px;
+      height: 4px;
+    }
+    .toggle__handler .crater--2 {
+      top: 14px;
+      left: 5px;
+      width: 6px;
+      height: 6px;
+    }
+    .toggle__handler .crater--3 {
+      top: 3px;
+      left: 5px;
+      width: 6px;
+      height: 6px;
+    }
+    .star {
+      position: absolute;
+      background-color: #fff;
+      transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+      border-radius: 50%;
+    }
+    .star--1 {
+      top: 5px;
+      left: 25px;
+      z-index: 0;
+      width: 22px;
+      height: 3px;
+    }
+    .star--2 {
+      top: 15px;
+      left: 28px;
+      z-index: 1;
+      width: 25px;
+      height: 3px;
+    }
+    .star--3 {
+      top: 23px;
+      left: 20px;
+      z-index: 0;
+      width: 22px;
+      height: 3px;
+    }
+    .star--4, .star--5, .star--6 {
+      opacity: 0;
+      transition: all 300ms 0 cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+    .star--4 {
+      top: 16px;
+      left: 11px;
+      z-index: 0;
+      width: 2px;
+      height: 2px;
+      transform: translate3d(3px, 0, 0);
+    }
+    .star--5 {
+      top: 8px;
+      left: 15px;
+      z-index: 0;
+      width: 3px;
+      height: 3px;
+      transform: translate3d(3px, 0, 0);
+    }
+    input:checked + .toggle {
+      background-color: #404E5F;
+    }
+    input:checked + .toggle:before {
+      color: #749ed7;
+    }
+    input:checked + .toggle:after {
+      color: #e8cda5;
+    }
+    input:checked + .toggle .toggle__handler {
+      background-color: #ffe5b5;
+      transform: translate3d(27px, 0, 0) rotate(0);
+    }
+    input:checked + .toggle .toggle__handler .crater {
+      opacity: 1;
+    }
+    input:checked + .toggle .star--1 {
+      width: 2px;
+      height: 2px;
+    }
+    input:checked + .toggle .star--2 {
+      width: 4px;
+      height: 4px;
+      transform: translate3d(-5px, 0, 0);
+    }
+    input:checked + .toggle .star--3 {
+      width: 2px;
+      height: 2px;
+      transform: translate3d(-7px, 0, 0);
+    }
+    input:checked + .toggle .star--4, input:checked + .toggle .star--5, input:checked + .toggle .star--6 {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+    input:checked + .toggle .star--4 {
+      transition: all 300ms 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+    input:checked + .toggle .star--5 {
+      transition: all 300ms 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+    input:checked + .toggle .star--6 {
+      transition: all 300ms 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+/* Toggle Menu End*/    
+    
+    h1.heading{
+        text-align: center;
+        padding: 5px;
+        font-family: 'Fjalla One', sans-serif;
+        margin: 10px;
+    }
+body.light-mode
+{
+    background-color: #fff;
+    color: #111;
+    -webkit-transition:.4s;
+    transition: .4s;
+}
+body.dark-mode
+{
+    background-color: #000;
+    color: #eee;
+    -webkit-transition:.4s;
+    transition: .4s;
+}
+body.dark-mode p{
+    color: #fff;
+}
+body.dark-mode .scroll i{
+    color: #BE935A;
+}
+body.dark-mode h1 span.size{
+    color: #999;
+}    
+body.dark-mode h1.heading{
+    color: #9f9f9f;
+}    
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.sticky{
+    background-color: #fcfcfc;
+
+    width: 100%;        
+    margin: auto;
+    line-height: 80px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+}
+.dark-mode .sticky{
+    background-color: #111;
+}    
+    #three ul{
+        text-align: center;
+        margin: 0;
+    }    
+    #three ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 20px;
+    }
+    #three ul i{
+        padding-right: 10px;
+        font-size: .8em;
+        color: #BE935A;
+    }
+    p span.highlight{
+        font-weight: bold;
+        font-size: 1.3em;
+        color: #000;
+    }
+    .dark-mode p span.highlight{
+        color: #9f9f9f;
+    }
+    
+/* No Touch devices */
+.cd-nav-trigger {
+  display: none;
+}
+
+.no-touch #cd-vertical-nav {
+  position: fixed;
+  right: 30px;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 999;
+    
+}
+    @-webkit-keyframes fade-in-right {
+  0% {
+    -webkit-transform: translateX(50px) translateY(-50%);
+            transform: translateX(50px) translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) translateY(-50%);
+            transform: translateX(0) translateY(-50%);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-right {
+  0% {
+    -webkit-transform: translateX(50px) translateY(-50%);
+            transform: translateX(50px) translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) translateY(-50%);
+            transform: translateX(0) translateY(-50%);
+    opacity: 1;
+  }
+}
+
+.no-touch #cd-vertical-nav li {
+  text-align: right;
+    list-style: none;
+}
+.no-touch #cd-vertical-nav li:nth-child(5) {
+    -webkit-animation: fade-in-right 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) .6s both;
+    animation: fade-in-right 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) .6s both;
+}
+.no-touch #cd-vertical-nav li:nth-child(4) {
+    -webkit-animation: fade-in-right 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) .7s both;
+    animation: fade-in-right 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) .7s both;
+}
+.no-touch #cd-vertical-nav li:nth-child(3) {
+    -webkit-animation: fade-in-right 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) .8s both;
+    animation: fade-in-right 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) .8s both;
+}
+.no-touch #cd-vertical-nav li:nth-child(2) {
+    -webkit-animation: fade-in-right 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) .9s both;
+    animation: fade-in-right 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) .9s both;
+}
+.no-touch #cd-vertical-nav li:nth-child(1) {
+    -webkit-animation: fade-in-right 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1.0s both;
+    animation: fade-in-right 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1.0s both;
+}    
+.no-touch #cd-vertical-nav a {
+  display: inline-block;
+  /* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+    
+}
+.no-touch #cd-vertical-nav a:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.no-touch #cd-vertical-nav a span {
+  float: right;
+  display: inline-block;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -o-transform: scale(0.6);
+  transform: scale(0.6);
+}
+.no-touch #cd-vertical-nav a:hover span {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+     background-color: #b68850; 
+}
+.no-touch #cd-vertical-nav a:hover .cd-label {
+    opacity: 1;
+    background-color: transparent;
+}
+.no-touch #cd-vertical-nav a.is-selected .cd-dot {
+  background-color: #b68850;
+    
+}
+.no-touch #cd-vertical-nav .cd-dot {
+  position: relative;
+  /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
+  top: 8px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #000;
+/*  background-color: #d88683;*/
+  -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
+  -moz-transition: -moz-transform 0.2s, background-color 0.5s;
+  transition: transform 0.2s, background-color 0.5s;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+.dark-mode .no-touch #cd-vertical-nav .cd-dot {
+    background-color: #fff;
+}   
+.dark-mode .no-touch #cd-vertical-nav .cd-label {
+    color: #9f9f9f;
+    z-index: 3;
+}    
+.no-touch #cd-vertical-nav .cd-label {
+  position: relative;
+  margin-right: 10px;
+  padding: .4em .5em;
+  color: #000;
+  font-size: 14px;
+  font-size: 0.875rem;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+  opacity: 0;
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+    .icon-1,.icon-2,.icon-3{
+        position: absolute;
+        pointer-events: none;
+    }
+    .icon-1{
+        width: 250px;
+        opacity: .3;
+        transform: rotate(-15deg);
+        left: 200px;
+        margin-top: 200px;
+    }
+    .dark-mode .icon-1, .dark-mode .icon-2, .dark-mode .icon-3{
+        filter: invert(100%);
+    }
+    .icon-2{
+        width: 300px;
+        opacity: .3;
+        margin-top: -100px;
+        right: 100px;
+        transform: rotate(25deg);
+    }
+    .icon-3{
+        width: 200px;
+        opacity: .3;
+        margin-top: -180px;
+        left: 100px;
+        transform: rotate(-15deg);
+    }
+    .dark-mode .menu img{
+        filter: invert(100);
+    }
+    .dark-logo{
+        display: none;
+    }
+    .dark-mode .dark-logo{
+        display: block;
+    }
+    .dark-mode .light-logo{
+        filter: invert(100);
+    }
+    .center-right-text{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    #five img{
+        position: absolute;
+        transform: translateX(-50%) rotate(-25deg);
+        left: 50%;
+        width: 300px;
+        opacity: .3;
+    }
+    .dark-mode #five img{
+        filter: invert(100);
+    }
+    #two,#three,#four,#five p{
+        font-size: 1.2em;
+    }
+    .center{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .center img{
+        margin: 20px;
+    }
+    .dark-mode .center img{
+        filter: invert(100);
+    }
+    .footer{
+        position: absolute;
+        width: 100%;
+        margin-top: -5vh;
+        text-align: center;
+        background: rgba(255,255,255,.3);
+    }
+    .dark-mode .footer{
+        background: rgba(0,0,0,.3);
+    }
+    .swiper-container {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .swiper-slide {
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        width: 400px;
+        height: 300px;
+    }
+    .slide-caption{
+        position: absolute;
+        bottom: 0px;
+        text-align: center;
+        width: 100%;
+        bottom: -70px;
+        padding: 10px;
+        
+    }
+    .slide-caption a{
+        margin: 10px;
+        background-color: #2A34E2;
+        padding: 15px;
+        border-radius: 20px;
+        color: #fff;
+        font-family: 'Questrial', sans-serif;
+        text-decoration: none;
+    }
+    #four .container:nth-child(2){
+        max-width: 100%;
+    }
+</style>
+    
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<!--Header Display-->
+<script type="text/javascript">
+        $(window).scroll(function(){
+            if ($(this).scrollTop()>660){
+                $('.menu').addClass("sticky");
+                //$(".menu").animate({ease-in-out:all},4);
+            }
+            else{
+                $('.menu').removeClass("sticky");
+            }
+
+        })
+          
+          $(window).on("scroll", function() {
+                var scrollHeight = $(document).height();
+                var scrollPosition = $(window).height() + $(window).scrollTop();
+                if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
+                    // when scroll to bottom of the page
+//                    alert("Bottom Reached!");
+
+                }
+           });
+      </script>
+    
+  <body id="body" class="light-mode">
+    
+    <div class="no-touch">
+      <nav id="cd-vertical-nav">
+		<ul>
+			<li>
+				<a href="#one" data-number="1">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Intro</span>
+				</a>
+			</li>
+			<li>
+				<a href="#two" data-number="2">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Service</span>
+				</a>
+			</li>
+			<li>
+				<a href="#three" data-number="3">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Skills</span>
+				</a>
+			</li>
+			<li>
+				<a href="#four" data-number="4">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Work</span>
+				</a>
+			</li>
+			<li>
+				<a href="#five" data-number="5">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Contact</span>
+				</a>
+			</li>
+			
+		</ul>
+	</nav>
+        <a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>
+    </div>  
+      
+    <header class="menu"><a href="#one"><img src="images/sleekLogo.png" width="100px" style="pointer-events: none;"></a></header>    
+<!--    <header class="menu dark-menu"><a href="#one"><img src="images/portfolio%20logo.png" width="100px"></a></header>    -->
+    
+    <!-- Intro-->  
+    <section id="one" class="top cd-section">
+        
+        <div class="inside-wrap" style="background-color: transparent">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-12" >
+                        <div class="logo">
+                            <a href="index.html" class="light-logo"><img src="images/sleekLogo.png" width="120px" style="pointer-events: none;"></a>
+<!--                            <a href="newindex.html" class="dark-logo"><img src="images/portfolio%20logo.png" width="120px"></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="center-content">
+                <div class="top-margin">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg left">
+                            <div class="center-text">
+                                    <h1>Hi &#x1F44B , I&#39;m <span class="color">Anup</span> <br><span class="size">Front End Developer and Student</span></h1>
+                                    <p class="slogan">
+                                        <br>
+                                        The fact that an idea inside one's mind can be turned into an action fascinates me more than anything else. Nothing brings me more pleasure than making something out of nothing.<br><br>
+                                        It's been a few years since I started working on the web. 
+                                        I am a <span class="highlight">quick learner</span> so I'm constantly learning web technologies and other design related topics. I'm drawn towards anything that sparks up my interest and inspires me. That is what got me into the field of web development.<br> 
+                                        If you're interested to know more shoot me an <span class="highlight" style="animation-delay: 1s"><a class="email-link" href="#five">email</a></span>.
+                                    </p>
+                                    <div class="round-img"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg right">
+                            <div class="center-text">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+<!--        <div class="scroll-icon"><a class="scroll" href="#two" title="About"><i class="fas fa-caret-down"></i></a></div>-->
+        
+    <!--Day and Night Toggle-->
+    <div class="toggleWrapper" title="Change Theme">
+        <input type="checkbox" class="dn" id="dn" onclick="toggleDarkLight()">
+          <label for="dn" class="toggle">
+            <span class="toggle__handler">
+              <span class="crater crater--1"></span>
+              <span class="crater crater--2"></span>
+              <span class="crater crater--3"></span>
+            </span>
+            <span class="star star--1"></span>
+            <span class="star star--2"></span>
+            <span class="star star--3"></span>
+            <span class="star star--4"></span>
+            <span class="star star--5"></span>
+            <span class="star star--6"></span>
+          </label>
+        </div>
+        
+    </section> 
+    <!-- Service-->  
+    <section id="two" class="cd-section">
+
+<!--
+        <img src="images/responsive.png" class="icon-1">
+        <img src="images/sketch.png" class="icon-2">
+        <img src="images/lightbulb.png" class="icon-3">
+-->
+        <div class="overlay"></div>
+        <div class="inside-wrap" style="background-color: transparent">
+            <div class="center-content2">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg">
+                            <h1 class="heading" data-aos="fade-down" data-aos-duration="700">What do I do?</h1>
+                            <p class="slogan" data-aos="fade-up" data-aos-duration="700" style="text-align: center;">
+                                I create websites that allow users to experience your website in a better way in any device they are using. <br>
+                                My goal for every project is to build a <span class="highlight">beautiful</span> and <span class="highlight"  style="animation-delay: 1s">responsive</span> design. I focus on typography, content and conveying the message that you want to send. I'm a developer, so I know how to create your website to run across devices using the latest technologies available.
+                            </p>
+                        </div>
+<!--                        <div class="col-lg" style="text-align: center;">
+                            <div class="center">
+                                <img width="200px" src="images/designer.png" data-aos="fade-down" data-aos-duration="900" style="pointer-events: none;">
+                                
+                                <img width="200px" src="images/programmer.png" data-aos="fade-up" data-aos-duration="900" style="pointer-events: none;">
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>   
+    <!-- Skills-->  
+    <section id="three" class="cd-section">
+        
+        <div class="inside-wrap" style="background-color: transparent">
+            <div class="center-content3">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="heading" data-aos="fade-down" data-aos-duration="900">My Skills</h1>
+                            
+                            <p class="slogan" style="text-align: center;" data-aos="fade-up" data-aos-duration="900">
+                                Apart from the courses included in my degree, I've taken a number of online courses such as <a href="#" target="_blank">The Complete Javascript Course</a>, <a href="#" target="_blank">Advanced CSS &amp; Sass</a>, <a href="#" target="_blank">React: the Complete Guide</a>, <a href="#" target="_blank">Javascript 30</a>, and I'm currently taking <a href="#" target="_blank">ES6 for Everyone</a>.
+                            </p>
+                            <ul data-aos="fade-up" data-aos-duration="900">
+                                <li style = "text-transform:uppercase"><i class="far fa-dot-circle"></i> Html</li>
+                                <li style = "text-transform:uppercase"><i class="far fa-dot-circle"></i> CSS</li>
+                                <li><i class="far fa-dot-circle"></i> Bootstrap</li>
+                                <li><i class="far fa-dot-circle"></i> JavaScript</li>
+                                <li><i cl = "text-transform:uppercase"ass="far fa-dot-circle"></i> jQuery</li>
+                                <li style = "text-transform:uppercase"><i class="far fa-dot-circle"></i> PHP &amp; SQL</li>
+                                <br>
+                                <li style = "text-transform:uppercase"><i class="far fa-dot-circle"></i> C#</li>
+                                <li style = "text-transform:uppercase"><i class="far fa-dot-circle"></i> Swift</li>
+                                <li style = "text-transform:uppercase"><i class="far fa-dot-circle"></i> C++</li>
+                                <li><i class="far fa-dot-circle"></i> Python</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>  
+    <!-- Work-->
+    <section id="four" class="cd-section">
+        <div class="inside-wrap" style="background-color: transparent">
+            <div class="center-content3">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            
+                            <h1 class="heading" style="text-align: center; margin: 0; padding-left: 0;" data-aos="fade-down" data-aos-duration="900">My Work</h1>
+                            <div class="center-text">
+                                <p class="slogan" style="text-align: center; width: 60%; margin: auto;" data-aos="fade-up" data-aos-duration="900">
+                                I like to keep it simple. I like to code things from scratch, and enjoy bringing ideas to life in the browser. <br>
+                                Please take a look at some designs I've dedicated my time to.
+                                </p>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                            <div class="col-12" data-aos="fade-left" data-aos-duration="900">
+                            <!-- Swiper -->
+                              <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide" style="background-image:url(./images/momocrave%20web.png)">
+                                            <div class="slide-caption"><a href="https://momocrave.com" target="_blank">View Website</a></div>
+                                        </div>
+                                        <div class="swiper-slide" style="background-image:url(./images/Barbershop%20web.png)">
+                                            <div class="slide-caption"><a href="https://anupsdesign.github.io/Barbershop-Demo-/" target="_blank">View Sample</a></div>
+                                        </div>
+                                        <div class="swiper-slide" style="background-image:url(./images/Bakery%20web.png)">
+                                            <div class="slide-caption"><a href="https://anupsdesign.github.io/Bakery-DEMO-/" target="_blank">View Sample</a></div>
+                                        </div>
+                                        <div class="swiper-slide" style="background-image:url(./images/photography%20Web.png)">
+                                            <div class="slide-caption"><a href="https://anupsdesign.github.io/photographyWebsite/#" target="_blank">View Sample</a></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination"></div>
+                        </div> 
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+
+    </section>    
+    <!-- Contact-->  
+    <section id="five" class="cd-section">
+        
+        <div class="inside-wrap" style="background-color: transparent">
+            <div class="center-content3">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg">
+                            <h1 class="heading" style="text-align: left; margin:0; padding-left: 0;" data-aos="fade-down-right" data-aos-duration="900">Let&#39;s Build Something Together!</h1>
+                            
+                            <p class="slogan" style="text-align: left;" data-aos="fade-up-right" data-aos-duration="900">
+                                Thanks for stopping by!<br>
+                                If you like what you saw, let&#39;s get in touch and start working together.<br>
+                                I'd love to hear from you. Write me an email and I'll get back to you shortly.<br>
+                            </p>
+                        </div>
+                        <div class="col-lg">
+                            <img src="images/sleekLogo.png">
+                            <div class="center-right-text" data-aos="fade-left" data-aos-duration="900">
+                                <p style="text-align: center;">
+                                    I'm available for work.
+                                    <br>
+                                    Please contact me:<br>
+                                    <a href="#"><span class="highlight">info@anupsdesign.com</span></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>    
+      
+    <div class="footer">
+        <p>Handcrafted by me &copy; <span class="year"></span></p>
+    </div>
+    
+    <script type="text/javascript" src="script/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+    </script>  
+      
+    <!-- Dark mode toggle-->
+    <script>
+        var body = document.getElementById("body");
+        var yr = (new Date()).getFullYear();   
+        var hr = (new Date()).getHours();   
+        if(hr >= 20){ // if it's 8:00PM the dark mode is turned on and the checkbox is checked by default
+            body.classList.add("dark-mode");
+            document.getElementById("dn").checked = true;
+        }else{
+             body.classList.add("light-mode");
+            document.getElementById("dn").checked = false;
+        }
+           
+        function toggleDarkLight(){ // checks what class body has and sets the class accordingly
+            var currentClass = body.className;
+            body.className = currentClass == "light-mode" ? "dark-mode" : "light-mode";
+        }
+        
+        document.querySelector(".footer p span.year").innerHTML = yr;
+    </script>
+    
+    <!-- Smoothh Scroll-->
+    <script>
+        jQuery(document).ready(function($){
+            var contentSections = $('.cd-section'),
+                navigationItems = $('#cd-vertical-nav a, .scroll-icon a, .menu a, .highlight a.email-link ');
+
+            updateNavigation();
+            $(window).on('scroll', function(){
+                updateNavigation();
+            });
+
+            //smooth scroll to the section
+            navigationItems.on('click', function(event){
+                event.preventDefault();
+                smoothScroll($(this.hash));
+            });
+            //smooth scroll to second section
+            $('.cd-scroll-down').on('click', function(event){
+                event.preventDefault();
+                smoothScroll($(this.hash));
+            });
+
+
+            function updateNavigation() {
+                contentSections.each(function(){
+                    $this = $(this);
+                    var activeSection = $('#cd-vertical-nav a[href="#'+$this.attr('id')+'"]').data('number') - 1;
+                    if ( ( $this.offset().top - $(window).height()/2 < $(window).scrollTop() ) && ( $this.offset().top + $this.height() - $(window).height()/2 > $(window).scrollTop() ) ) {
+                        navigationItems.eq(activeSection).addClass('is-selected');
+                    }else {
+                        navigationItems.eq(activeSection).removeClass('is-selected');
+                    }
+                });
+            }
+
+            function smoothScroll(target) {
+                $('body,html').animate(
+                    {'scrollTop':target.offset().top},
+                    500
+                );
+            }
+        });      
+    </script>   
+    
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({disable: 'mobile'}); // AOS turned off on mobile
+    </script>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
